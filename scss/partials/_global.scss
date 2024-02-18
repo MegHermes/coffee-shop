@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: $open-sans;
+    font-weight: 400;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2 {
+    font-weight: 300;
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.wrap {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.full-width {
+    width: 100%;
+    &--pink {
+        background-color: $nitro-pink;
+    }
+    &--gray {
+        background-color: $light-gray;
+    }
+    &--white {
+        background-color: $white;
+    }
+}
+
+.icon {
+    min-width: 2rem;
+    max-width: 4rem;
+}
+
+
+/* dislodged border */
+
+.dislodged-border {
+    background: $nitro-blue;
+    color: $white;
+    font-family: sans-serif;
+    padding: .5rem;
+    position: relative;
+    text-transform: uppercase;
+    text-align: center;
+    height: 3.2rem;
+    width: 10rem;
+    &:before {
+        width: 10rem;
+        border: 0.125rem solid $graphite;
+        content: "";
+        height: 100%;
+        position: absolute;
+        bottom: 0.4063rem;
+        right: 0.3125rem;
+    }
+    &:hover {
+        background-color: $nitro-blue-darker;
+        border: 0.125rem solid $graphite;
+        padding-top: .8rem;
+        transition: all 0.3s ease;
+        &:before {
+            display: none;
+        }
+    }
+}
+
+
+/* mobile responsive design */
+
+@media screen and (min-width: 0px) and (max-width: 500px) {
+    .icon {
+        min-width: 1rem;
+        max-width: 2.5rem;
+    }
+}
