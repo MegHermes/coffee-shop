@@ -21,5 +21,5 @@
 
 ### Live
 
-- [Coffee Shop](https://meghermes.github.io/coffee_shop/)
+- [Coffee Shop](https://meghermes.github.io/coffee-shop/)
 
